@@ -1,0 +1,490 @@
+% \PassOptionsToPackage{table}{xcolor}
+\documentclass{xjtureport}
+\usepackage{color}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% \usepackage{enumerate}
+% \newCJKfontfamily\sonti{FZCuSong-B09S}[BoldFont=FZCuSong-B09S]
+% =============================================
+% Part 0 Edit the info
+% =============================================
+% \titleformat{\section}{\bfseries\sonti\sectionef}{\thesection}{1em}
+\major{大数据管理与应用}
+\name{张锦羽}
+\title{基于ASTP模型的日本迅销集团下优衣库品牌的营销活动分析}
+\stuid{2204112387}
+\college{管理学院}
+\date{\today}
+% \lab{寝室}
+\course{市场营销}
+\instructor{宫翔}
+% \grades{59}
+\expname{市场营销第一次报告}% 副标题
+% \exptype{设计实验}
+% \partner{Bob}
+% \setbeamertemplate{footline}[page number]
+\setlength{\abovecaptionskip}{0.cm}
+\setCJKmainfont{simsun.ttc}[ BoldFont=simhei.ttf,ItalicFont=simkai.ttf]
+\begin{document}
+% =============================================
+% Part 1 Header
+% ============================================={不想要封面就注释掉}============
+\makecover
+% \makeheader
+\zihao{-4}
+
+% =============================================
+% Part 2 Main document
+% =============================================
+% \maketitle
+\thispagestyle{fancy}
+
+\rfoot{\thepage}
+\tableofcontents
+\clearpage
+\section{研究背景}
+\subsection{迅销集团(Fasting Retailing)简介}
+迅销集团\cite{ref1}是日本的零售控股公司，也是世界第三大休闲服装公司，同时也是亚洲最大的服装公司。持有的品牌包括知名的\textbf{UNIQLO（优衣库）}，以及ASPESI、Comptoir des Cotonniers、Foot Park、National Standard，GU等。FAST为“迅速”之意，而RETAILING即“零售”，这两者组合在一起，代表着像快餐业般步伐迅速的零售业。
+\begin{figure}[H]
+    \centering
+    \subfigure[迅销集团logo]{
+        \includegraphics[width=0.4\textwidth]{figure/FAST_RETAILING_logo.png}
+    }
+    \subfigure[迅销集团旗下品牌]{
+        \includegraphics[width=0.5\textwidth]{figure/迅销旗下品牌.jpg}
+    }
+    \caption{迅销集团简介}
+\end{figure}
+\subsection{优衣库(UNIQLO)简介}
+优衣库（日语：ユニクロ）是经营休闲、运动服装设计、制造和零售的日本公司，由柳井正创立，建立于1984年，是日本著名的休闲品牌，隶属于排名全球服饰零售行业前列的日本迅销公司旗下，在2005年11月1日公司重整后，UNIQLO现在为迅销的100\%全资附属公司，1999年2月该公司股票在东京证券交易所第一部上市\cite{ref2}。 并以预托证券形式在香港第二上市，2014年3月5日正式在香港挂牌上市。
+% \begin{figure}[H]
+%         \centering
+%         \includegraphics[width=0.35\textwidth]{figure/优衣库logo.jpg}
+%         \caption{优衣库logo}
+% \end{figure}
+
+
+% 定位为“快时尚”的UNIQLO，目前为全球知名服装品牌之一，除了日本之外目前在全球十七个地区展开业务。在亚洲地区，已经在日本、中国大陆、中国台湾、中国香港、韩国等东亚、东南亚国家和地区开设门店超过1500家。现任董事长兼总经理柳井正，在日本首次引进了大卖场式的服装销售方式，通过独特的商品策划、开发和销售体系来实现店铺运作的低成本化，由此引发了优衣库的热卖潮。在2018世界品牌500强排行榜中，优衣库排名第168位。
+% % \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[width=0.7\textwidth]{figure/香港优衣库门店.jpg}
+% %     \caption{位于香港海港城内的优衣库店面}
+% % \end{figure}
+\subsection{研究目的与意义}
+优衣库作为亚洲最知名的服装快销品牌之一，在不同国家和地区都取得了商业上的巨大成功。诸如优衣库等这些快时尚品牌通过运用独特的营销策略,给我国消费者带来了不一样的消费体验，使我国的服装品牌在与其竞争过程中处于劣势地位。作为快时尚服装品牌中的姣姣者，优衣库在我国开店总数最多，其能够在中国发展迅速，并取得可观的经济效益，这与其别具一格的营销策略分不开。本文将利用科特勒的ASTP模型分析优衣库的营销管理活动（包括营销环境、市场细分、目标市场、市场定位四个方面）。
+\section{优衣库营销环境分析}
+\subsection{识别S/W/O/T}
+\subsubsection{基于PEST分析识别外部宏观环境}
+\begin{enumerate}
+    \item 政治环境
+    \begin{enumerate}
+        \item 改革开放以来，国家政策对外资企业的包容开放（方针政策\& 国内外政局稳定）\\
+        优衣库能够在中国获得如此大的市场，得益于国际政治环境的和平、合作，以及国内政治环境的开放和发展。改革开放以来，我国鼓励外部资本进入我国市场，促进市场经济发展，这为优衣库进军我国市场创造了条件。
+        \item 对外资企业投资建厂的支持（法律法规）\\
+        国家发展改革委等部门印发《关于以制造业为重点促进外资扩增量稳存量提质量的若干政策措施》中指出：要优化投资环境，扩大外商投资增量；加强投资服务，稳定外商投资存量；引导投资方向，提升外商投资质量。\cite{ref3}我国一直提倡服装品牌扩大其出口和进口市场，这就为优衣库在我国国内选择代工企业提供了很大的空间，在保证产品质量上升的同时，也能提高其议价能力。
+        \item 我国网络购物环境的优越（政策导向）\\
+        商务部《商务部关于促进网络购物健康发展的指导意见》中指出，“网络购物是依托互联网和信息技术的新型零售形式...我国支持并大力发展网络购物...”\cite{ref4}。同时，我国开放、稳定的网络购物环境也未优衣库的发展提供了帮助，各项政策都在扶持网络购物，这为优衣库实现线上购物提供了保障，也利于其优化线上、线下的资源配置。
+    \end{enumerate}
+    \item 经济环境
+    \begin{enumerate}
+        \item 国民消费水平的提升（国家收入\& 消费支出）\\
+        改革开放以来，伴随着我国经济持续发展，居民可支配收入增加，个人消费水平提升。根据马斯洛的需求层次理论分析，消费者满足了基本的生理需求后就会转向更高层级的需求，优衣库凭借其百搭的风格和过硬的质量，获得许多消费者的青睐。
+        \item GDP总量不断提升（国家收入）\\
+        2020 年全年国内生产总值（GDP）为1015986 亿元，按可比价格计算，比上年增长2.3\%。在双循环新发展格局中，消费被摆在突出位置，2020 年最终消费对GDP 的贡献率是54.3\%。尽管疫情当前，我国的GDP 总量仍不断增长。
+        \item 疫情因素影响对服饰零售行业的冲击，消费者消费支出缩水\\
+        根据《千际投行：2021年服装零售行业发展研究报告》\cite{ref5}显示，受全球新冠肺炎疫情的影响，服饰零售行业同比缩水10\%，零售服饰行业面临巨大冲击。
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.7\textwidth]{figure/新冠影响服饰.png}
+            \caption{疫情冲击服饰零售业}
+        \end{figure}
+    \end{enumerate}
+    \item 社会环境
+    \begin{enumerate}
+        \item 经济大形式的改变影响消费者的消费观念(消费观念的改变)\\
+        时代的变迁、经济的发展使得消费者的消费习惯和消费方式都发生了变化，过去广告营销带来的品牌高价已经不被消费者所接受，消费者更加侧重于性价比高、舒适度高的产品。同时，消费者在进行品牌的选择时通常会考虑自己的职业、收入水平、消费能力等方面的因素，不同的品牌对不同的消费者来说有不同的期待和意义。对于优衣库的消费者来说，他们之所以选择优衣库这个品牌，看重的便是其“以人为本”的穿衣理念，尽管优衣库销售的衣服多是简单、自然、单调的基本款，但是只要经过精心的搭配凸显出个人的特色，同样能够展示自我个性和风采。同时，仓储超市型的门店布置也让消费者在进行购物时更能发挥自己的主观能动性，更能自由自在地试穿各类衣服。
+        \item 消费价值观发生改变\\
+        社会化媒体对消费者的行为的影响，缩短了消费者进行决策的时间周期。\cite{ref6}借助社会化平台的传播，消费者可以随时随地获得很多消费者对自身体验的描述。越来越多的网络口碑和在社会化网络媒体上传播，人们在网络上找到有共同背景、爱好和品味的人，从而影响消费者感知价值和对媒体的信任程度。传统时代信息量缺乏、权威性不足的问题得到了解决，对产品选择与购买决策产生重要的影响。
+    \end{enumerate}
+    \item 技术环境
+    \begin{enumerate}
+        \item 第三方线上支付和征信系统，保障交易安全。(技术保护策略)\\
+        在支付结算方面，支付宝、微信等第三方支付和征信平台提供的安全交易技
+术，有效保证了网上的交易安全。在征信系统方面，第三方支付平台
+在处理用户线上付款等操作时，也会存储用户的身份信息、资产信息以及信
+用记录等。这类技术的应用和普及能够让消费者安心进行网上购物，减少商品流通成本。
+        \item 物流技术信息化的发展，管理信息系统动态管理仓储(技术商业化趋势)\\
+        随着现代信息技术的发展，管理信息系统的上线对于现代物流产业的发展产生了巨大的影响。尤其是对于优衣库这种“仓储型门店”、“超市型购物”的门店型分销方式来说，信息技术的使用能够帮助优衣库更好的管理库存，减少物流运输成本。
+        \item 网络技术的发展，影响优衣库的营销模式(技术发展趋势)\\
+        线上渠道的运营：用户可以通过网络下单购买优衣库产品，优衣库需要为用户匹配附近的门店进行取货或者联系物流服务送货上门。这种分销方式不同于传统的门店型分销，给优衣库带来机遇与挑战。网络推广：社交媒体的发展影响了用户的决策，如何利用社交媒体的影响力推广自己的商品同样是优衣库的机遇与挑战。
+    \end{enumerate}
+\end{enumerate}
+\subsubsection{基于波特五力分析识别外部微观环境}
+\begin{enumerate}
+    \item 买家的议价能力\\
+    优衣库采用B2C的商业模式，如果是传统服装零售，消费者个体的议价能力是非常弱的。然而随着网络技术的发展，消费者的议价能力也在显著提高，主要体现在以下两个方面：
+    \begin{enumerate}
+        \item 消费者能够利用网络信息迅速货比三家，减少挑选产品所用的时间成本：网络社交媒体深刻改变了消费者的决策行为，消费者掌握了商业的主导权，调查显示，78.2\%的消费者不再相信通过广告推广的产品\cite{ref7}，而是主动搜索信息、挑选产品、对比价格。
+        \item 休闲服饰行业的产品没有太多外观上差异化，难以靠广告和文字化和口语化的推销手段让消费者买单，消费者可以很随意的选择其他品牌。
+    \end{enumerate}
+    综上所述优衣库的消费者拥有很强的议价能力。
+    \item 供应商的议价能力\\
+    优衣库的供应商主要是原料供应商、代工厂供应商、雇员分别向优衣库供应原料、成品、劳动力
+    \begin{enumerate}
+        \item 原料供应商：优衣库通过与全球面料制造商直接洽谈，
+        实现了面料供应的“高品质、大量、稳定及低成
+        本”。此外，采取大批量采购的方式，从而获得
+        了较其他任何一家服装制造商皆为有利的交易
+        条件。
+        \item 代工厂：优衣库在全球范围内都有代工企业，并建立深度合作关系，优衣库会派出技术指导与产品监督参与代工流程。由于代工厂都是大型服装制造企业，最多每次可达4、5亿件的规模，一方面压低了代工价格；另一方面也给了代工厂更大的议价空间，如果优衣库不能满足代工厂的价格要求，它们可能会终止合作，对优衣库进行抵制。这样会严重影响优衣库的产业链健康稳定。
+        \item 雇员：劳动力价格不断上涨，尤其是在北京、上海等一线城市，优衣库并没有很高竞争力的薪酬，员工可能随时会跳槽
+    \end{enumerate}
+    综上所述，优衣库面对的供应商具有很强的议价能力。
+    \item 业内竞争者\\
+        优衣库在中国大陆地区最主要的竞争对手有两个:H\&M和ZARA。
+        
+        H\&M主要针对15-30岁的年轻人。在全球拥有1500家门店，雇员超过50000人，生产部22个，其中亚洲10个。而ZARA90\%的门店采用直营的方式，所有服装在西班牙生产，之后运往各国店铺。主要面向25-35岁，有着较高学历，对时尚元素非常敏感并有一定消费能力的群体。
+
+        ZARA 的品牌核心竞争力那就是“快”，首先ZARA 供应链整合优势，极大地缩短了出货时间。为了追求快，ZARA牺牲了很多的成本，ZARA 依靠总部所在的拉科鲁尼亚的无数手工作坊、家庭工厂起家，很多产品直接在当地生产，在此之前，所有的远程运输都是飞机，而不用货船，甘愿支付高额的运费而不愿意花费广告费和市场营销的费用，ZARA 几乎不作广告宣传，它的广告成本仅占其销售额的0-0.3\%，而行业平均水平则是3.5\%，广告费用的节省成为它另一方面的利润来源。\cite{ref9}
+
+        H\&M 是同样十分优秀的快时尚品牌，在模式上面来说，更加倾向于兼顾出货时间和产品成本，因此速度不及ZARA，但是依靠着成本领先优势也在这一行业占有一席之地。另外H\&M相比于ZARA、UNIQLO来说在广告费用上的投入更多，凯特·莫斯、麦当娜、米歇尔·奥巴马都曾是H\&M 代言人。\cite{ref9}
+        % Please add the following required packages to your document preamble:
+\begin{table}[H]
+    \renewcommand\arraystretch{1.5}
+    \centering
+    \caption{优衣库与其业内竞争者对比表（数据来源于\cite{ref10}与官网数据）}
+    \begin{tabular}{@{}cccc@{}}
+    \toprule
+                & \textbf{UNIQLO} & \textbf{ZARA} & \textbf{H\&M} \\ \midrule
+    \textbf{门店数量} & 超过820家          & 570家          & 新疆棉事件影响       \\
+    \textbf{出货速度} & 中等              & 最快            & 快             \\
+    \textbf{时尚程度} & 基础款为主           & 定位高端          & 定位高端          \\
+    \textbf{物流速度} & 中等              & 最快            & 快             \\
+    \textbf{广告费用} & 营收的3$\sim$6\%   & 不超过营收的0.5\%   & 营收的3$\sim$6\% \\ \bottomrule
+    \end{tabular}
+    \end{table}
+    \item 新进入者\\
+    随着优衣库、ZARA等快时尚品牌的异军突起，国货品牌也意识到了快销服装的巨大市场。国产快销品牌中比较知名的有VANCL(凡客诚品)、韩都衣舍等。凡客诚品整体设计风格简单优雅，定位为中产阶级，价格是一半男士都能穿得起的，整体服饰风格呈现休闲化与年轻化。随着产品种类的不断丰富以及对用户体验的关注，VANCL在中国服装电子商务领域的品牌影响力与日俱增，德勤审计事务所认为：凡客诚品是亚太地区成长最快的品牌。
+
+    另一个异军突起的品牌是韩都衣舍，致力于为都市时尚人群提供高品质的流行服饰，作为中国互联网快时尚品牌，韩都衣舍凭借款式多、更新快、性价比搞的理念深得消费者的喜爱与信赖。
+
+    上述两种企业都是凭借互联网营销渠道成长起来的快时尚服饰品牌，网络营销表现都比优衣库官方直销店出色。优衣库一仿麦呢要考虑强大的现有竞争对手的营销策略。另一方面，又要防止新进入企业的威胁。
+
+    另外由于没有太高的进入壁垒，其他纺织、服装企业，或者资本雄厚的其他行业企业，也随时可能加入服装零售业，加剧行业的竞争强度。
+    \item 替代者\\
+    由于优衣库的产品线较广，所以优衣库服饰的不同子系列会拥有不同的替代品。如优衣库运动服饰的替代品有：阿迪达斯、耐克、李宁、安踏等；优衣库商务男装的替代品有：七匹狼、利郎、劲霸等，女装更是随处可见。如果消费者放弃休闲服饰，那么以上所有品牌都可能成为优衣库的替代品。
+\end{enumerate}
+\subsubsection{识别内部要素}
+\begin{enumerate} 
+    \item 公司层面
+    \begin{enumerate}
+    \item 中国大陆地区优衣库财务表现优异，利润占比逐年扩大(发展目标)\\
+    \begin{figure}[H]
+    \centering
+    \subfigure{
+        \includegraphics[width=0.4\textwidth]{figure/利润uniqlo.png}
+    }
+    \subfigure{
+        \includegraphics[width=0.4\textwidth]{figure/收益uniqlo.png}
+    }
+    \caption{优衣库财务表现（来源于\cite{11}）}
+    \label{优衣库财务表现}
+\end{figure}
+优衣库母公司迅销集团目前稳居全球服装零售品牌第五名，是绝对的亚洲地区服饰品牌领头羊。优衣库依靠门店经营作为主要收入，但在疫情冲击下，在2020财年利润有了急剧的下降趋势，但随着两年的经营，优衣库的利润水平已经基本恢复到前疫情时代。
+
+    由图\ref{优衣库财务表现}可以看出，在优衣库大中华区的利润与收益均占了迅销公司年收入的大部分，且伴随2020年疫情的冲击，优衣库在2022年一扫颓势，利润同比增长了20.3\%\cite{ref11}
+    
+    \item 公司自主研发能力强，引领休闲零售服饰产业变革(核心能力)\\
+    优衣库创始人柳井正先生，相比于“服饰品牌”，更愿意将优衣库界定为“技术公司”。\cite{12}因为优衣库从创始至今都在热衷一件其他快时尚品牌不会关心的事——研发。受益于严谨的研发理念，其保暖服饰系列产品Heattech几乎引领了清薄保暖时代的来临。除此之外，保湿系列、快干系列、轻型羽绒服系列等商品也已经形成特色。
+    \item 业务组合合理（业务组合）\\
+    男装绝对是优衣库的金牛业务。作为优衣库的主营业务，上一财年的营业额为30亿美元，为优衣库的运行带来了滚滚的现金流。但是，由于市场趋于饱和，发展速度缓慢，优衣库必须在其他领域有所建树。女装为优衣库的明星业务，上一财年营业额为15.3亿美元。由于市场对于女装的需求远高于男装，使得优衣库的女装业务的发展有了保障，相信在未来女装业务会有更大的发展。饰品类业务是优衣库的瘦狗类业务，优衣库的饰品业务几年来一直处于可有可无的地位，上一财年更是亏损了6600万元。优衣库的童装业务近几年发展不错，上一财年的的营业收入达到了5.5亿美元，但是由于市场上拥有更专业的童装品牌如宝大祥等，使得该业务的竞争较激烈，未来的发展还是个未知数。\cite{ref11}
+    
+\end{enumerate}
+\item 业务单位层面
+\begin{enumerate}
+    \item 零售终端（门店）与消费者面对面接触，整合消费者需求(差异化战略)\\
+    零售终端不仅创造了收入，还收集到了消费者的需求信息，对消费需求的分析从根本上决定了企业对上游资源的整合力度与模式。
+    \item 管理信息系统辅助仓储管理，降低企业运行成本(成本领先战略)\\
+    优衣库利用现代信息技术帮助物流管理，各门店部署管理信息系统进行消费信息的传递，实现了产品设计、生产、零售环节的价值转换。
+    \item 日本企业世界一流的服务理念(差异化战略)\\
+    优衣库创始人柳井正希望，用日本先进的纺织技术和世界一流的服务理念，创造一个世界一流的服装品牌。这种世界一流的服务思想已经融入了优衣库的日常经营之中。
+    \item 代工厂生产，服饰质量参差不齐(成本领先战略)\\
+    优衣库在世界范围内拥有众多代工厂，但不同代工厂之间生产的同一服饰在质量上可能会出现参差不齐的情况。
+\end{enumerate}
+\item 职能单位层面
+\begin{enumerate}
+    \item 企业文化铸就高素质员工与高素质店长(产品销售能力)\\
+    优衣库具有日式企业的严谨且柔情的特点，对待员工一丝不苟，员工的日常工作都会有量化指标进行记录。同时优衣库也有“Thank U Card”一类的日常活动和丰厚的员工福利。优衣库采用“LifeWear”(服适人生)的经营理念，传达给员工，同时向社会中的消费者传达，优衣库不仅仅是售卖服饰的企业，更是向顾客出售一种生活态度。
+    \item  产品塑造的形象好，用户满意度高(产品满意度)\\
+    优衣库自从进入中国大陆市场便斩获较高人气，以其超高性价比占有市场份额。之后推出的“UT系列”“联名限定款”更是牢牢地把握住了年轻人的胃口。
+    \item 产品销售能力强，线下门店为主，线上旗舰店为辅，线上营销占比逐年增加(产品销售能力)\\
+    优衣库采用线下为主，线上为辅的销售模式，且随着疫情的冲击，预计线上销售占比会持续增加。
+    \item “薄利多销”的销售模式，产品利润率不高(产品盈利能力)\\
+    优衣库定位为百搭休闲快时尚品牌，定价多在99-399元的区间，相较于国际名牌如Nike、Adidas等，优衣库的品牌溢价不明显，定价中下，走薄利多销的商业模式，这也代表着优衣库系列产品的利润率不高。
+\end{enumerate}
+\end{enumerate}
+
+\subsubsection{基于简单平均法识别内外部环境要素}
+邀请购买过优衣库服饰的或者是其他快时尚品牌服饰的同学共10名（男生5人，女生5人）为每一个外部或者内部因素进行独立打分，重要性从1-10，最重要的为10分，最不重要的为1分，通过计算平均值，可以确定关键的内外部要素
+\begin{itemize}
+    \item 外部要素
+    由表\ref{简单平均法}可以看出，关键的外部要素为：
+    \begin{enumerate}
+        \item  疫情冲击服饰零售业，消费缩水
+        \item 对外资企业投资建厂的支持
+        \item 物流技术信息化的发展
+        \item 国产快时尚品牌的崛起 
+        \item 物流技术信息化的发展 
+        \item 国家政策对外资企业的开放包容
+    \end{enumerate}
+\begin{table}[H]
+    \renewcommand\arraystretch{1.5}
+    \centering
+    \caption{简单平均法确定关键外部环境}
+    \label{简单平均法}
+    \begin{tabular}{cllllll}
+    \hline
+    \multicolumn{1}{l}{\textbf{外部环境}}                                                                                                 & \textbf{因素}                                        & \textbf{同学1}                      & \textbf{同学2}                      & ...                                 & \textbf{同学10}                     & \textbf{均值}                         \\ \hline
+    \multicolumn{1}{c|}{}                                                                                                             & {\color[HTML]{FE0000} \textbf{1.国家政策对外资企业的开放包容}}   & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{7}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{6}} & {\color[HTML]{FE0000} \textbf{7.6}} \\
+    \multicolumn{1}{c|}{}                                                                                                             & {\color[HTML]{FE0000} \textbf{2.对外资企业投资建厂的支持}}     & {\color[HTML]{FE0000} \textbf{9}} & {\color[HTML]{FE0000} \textbf{9}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{6}} & {\color[HTML]{FE0000} \textbf{7.8}} \\
+    \multicolumn{1}{c|}{}                                                                                                             & 3.我国网络购物环境的优越                                      & 5                                 & 7                                 & ...                                 & 5                                 & 5.3                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & 4.国民消费水平的提升                                        & 7                                 & 5                                 & ...                                 & 5                                 & 5.2                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & 5.GPD总量不断提升                                        & 3                                 & 7                                 & ...                                 & 6                                 & 4.8                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & {\color[HTML]{FE0000} \textbf{6.疫情冲击服饰零售业，消费缩水}} & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{9}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{8.4}} \\
+    \multicolumn{1}{c|}{}                                                                                                             & 7.经济水平影响消费观念                                       & 5                                 & 7                                 & ...                                 & 3                                 & 5.1                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & 8.社媒普及影响消费者行为                                      & 7                                 & 3                                 & ...                                 & 5                                 & 5.7                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & 9.第三方支付和征信系统保障交易安全 & 7 & 5 & ...& 6&6.3\\
+    \multicolumn{1}{c|}{}                                                                                                             & {\color[HTML]{FE0000} \textbf{10.物流技术信息化的发展}}      & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{5}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{7.7}} \\
+    \multicolumn{1}{c|}{\multirow{-11}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}宏\\ \\观\\ \\  环\\ \\ 境\end{tabular}}}} & 11.网络技术对营销模式的影响                                    & 5                                 & 5                                 & ...                                 & 6                                 & 5.1                                 \\ \hline
+    \multicolumn{1}{c|}{}                                                                                                             & 12.买家货比三家，议价能力强                                    & 7                                 & 3                                 & ...                                 & 5                                 & 4.2                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & 13.供应商手握大量订单，议价能力强                                 & 7                                 & 5                                 & ...                                 & 5                                 & 5.4                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & 14.劳动力成本逐年提高                                       & 3                                 & 4                                 & ...                                 & 5                                 & 4.6                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & 15.业内竞争者威胁大                                        & 5                                 & 7                                 & ...                                 & 6                                 & 6.7                                 \\
+    \multicolumn{1}{c|}{}                                                                                                             & 16.其他品牌对优衣库具有替代性                                   & 7                                 & 5                                 & ...                                 & 8                                 & 7.1                                 \\
+    \multicolumn{1}{c|}{\multirow{-6}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}微\\  观\\  环\\ 境\end{tabular}}}}           & {\color[HTML]{FE0000} \textbf{17.国产快时尚品牌的崛起}}      & {\color[HTML]{FE0000} \textbf{6}} & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{7.7}} \\ \hline
+    \end{tabular}
+    \end{table}
+    
+\item 内部要素
+由表\ref{内部环境}可知，关键的内部要素有：
+\begin{enumerate}
+    \item 公司自主研发能力强
+    \item 代工厂生产，服饰质量参差
+    \item 产品形象好，用户满意度高
+    \item 零售终端（门店）与消费者面对面接触，整合消费者需求
+    \item “薄利多销”模式，销售利润率不高
+\end{enumerate}
+\begin{table}[H]
+    \renewcommand\arraystretch{1.5}
+    \centering
+    \caption{简单平均法确定关键内部环境}
+    \label{内部环境}
+    \begin{tabular}{c|llllll}
+    \hline
+    \multicolumn{1}{l|}{\textbf{内部要素}}                                                          & \textbf{因素}                                                                                       & \textbf{同学1}                      & \textbf{同学2}                      & \textbf{...}                        & \textbf{同学10}                     & \textbf{均值}                         \\ \hline
+                                                                                                & 1.财务表现优异、利润逐年增长                                                                                   & 4                                 & 3                                 & ...                                 & 4                                 & 3.5                                 \\
+                                                                                                & {\color[HTML]{FE0000} \textbf{2.公司自主研发能力强}}                                                       & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{9}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{9}} & {\color[HTML]{FE0000} \textbf{8.7}} \\
+    \multirow{-3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}公司\\ 层面\end{tabular}}}            & 3.业务组合合理                                                                                          & 5                                 & 6                                 & ...                                 & 7                                 & 6.2                                 \\ \hline
+                                                                                                & {\color[HTML]{FE0000} \textbf{\begin{tabular}[c]{@{}l@{}}4.零售终端与消费者近距离接触\\ 整合消费者需求\end{tabular}}} & {\color[HTML]{FE0000} \textbf{7}} & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{7.7}} \\
+                                                                                                & \begin{tabular}[c]{@{}l@{}}5.管理信息系统辅助仓储管理\\ 提高企业运行效率\end{tabular}                                 & 6                                 & 7                                 & ...                                 & 8                                 & 7.1                                 \\
+                                                                                                & 6.日式企业世界一流的服务理念                                                                                   & 4                                 & 6                                 & ...                                 & 8                                 & 6.3                                 \\
+    \multirow{-4}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}业务单\\ 位层面\end{tabular}}} & {\color[HTML]{FE0000} \textbf{7.代工厂生产，服饰质量参差}}                                                    & {\color[HTML]{FE0000} \textbf{7}} & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{9}} & {\color[HTML]{FE0000} \textbf{8.1}} \\ \hline
+                                                                                                & 8.企业文化佳，员工素质高                                                                                     & 7                                 & 6                                 & ...                                 & 7                                 & 7.1                                 \\
+                                                                                                & {\color[HTML]{FE0000} \textbf{9.产品形象好，用户满意度高}}                                                    & {\color[HTML]{FE0000} \textbf{8}} & {\color[HTML]{FE0000} \textbf{9}} & {\color[HTML]{FE0000} \textbf{...}} & {\color[HTML]{FE0000} \textbf{9}} & {\color[HTML]{FE0000} \textbf{8.6}} \\
+                                                                                                & 10.销售能力强，线上线下双渠道                                                                                   & 4                                 & 3                                 & ...                                 & 5                                 & 4.8                                 \\ 
+       \multirow{-4}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}职能单\\ 位层面\end{tabular}}}        & {\color[HTML]{FE0000} \textbf{11.“薄利多销”模式，销售利润率不高}}                     & {\color[HTML]{FE0000} \textbf{9}}     &  {\color[HTML]{FE0000}\textbf{7}}        & ...                                &  {\color[HTML]{FE0000} \textbf{9}}                   &        {\color[HTML]{FE0000} \textbf{8.3}}    \\ \hline
+    \end{tabular}
+    \end{table}
+
+\end{itemize}
+\subsubsection{基于加权平均法识别关键内外环境要素}
+通过加权评分法识别出的外部环境机会威胁如表\ref{加权外部}所示：
+\begin{table}[H]
+    \renewcommand\arraystretch{1.5}
+    \centering
+    \caption{加权平均法识别外部环境机会威胁}
+    \label{加权外部}
+    \begin{tabular}{c|llll}
+    \hline
+    \multicolumn{1}{l|}{\textbf{外部环境}} & \textbf{因素}      & \textbf{威胁机会} & \textbf{概率} & \textbf{加权分} \\ \hline
+    \multirow{4}{*}{\textbf{宏观环境}}     & 1.国家政策对外资企业的开放包容 & 6             & 1           & 6.0          \\
+                                       & 2.对外资企业投资建厂的支持   & 7             & 0.9         & 6.3          \\
+                                       & 6.疫情冲击服饰零售业      & -9            & 0.7         & -6.3         \\
+                                       & 10.物流技术信息化的发展    & 7             & 0.7         & 4.9          \\\hline
+    \multicolumn{1}{l|}{\textbf{微观环境}} & 17.国产快时尚品牌的崛起    & -9            & 0.9         & -8.1         \\ \hline
+    \end{tabular}
+    \end{table}
+    通过分析可以确定优衣库的机会和威胁为：
+    \begin{itemize}
+        \item 机会：
+        \begin{itemize}
+            \item[O1] 国家政策对外资企业的开放包容
+            \item[O2] 对外资企业投资建厂的大力支持
+            \item[O3] 物流技术信息化的发展   
+        \end{itemize}
+        \item 威胁：
+        \begin{itemize}
+            \item [T1] 疫情冲击服饰零售业
+            \item [T2] 国产快时尚品牌的崛起
+        \end{itemize}
+    \end{itemize}
+    通过加权平均法识别出的内部要素优势劣势如表\ref{加权内部}所示：
+
+\begin{table}[H]
+    \renewcommand\arraystretch{1.5}
+    \centering
+    \caption{加权平均法识别内部环境机会威胁}
+    \label{加权内部}
+    \begin{tabular}{@{}c|llllllll@{}}
+    \toprule
+    \textbf{内部要素}                                                               & \textbf{要素}                                                       & \textbf{权重} & \textbf{\begin{tabular}[c]{@{}l@{}}优衣库\\ 打分\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}优衣库\\ 加权\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}ZARA\\ 打分\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}ZARA\\ 加权\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}H\&M\\ 打分\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}H\&M\\ 加权\end{tabular}} \\ \midrule
+    \textbf{公司层面}                                                               & 2.公司自主研发能力强                                                       & 0.3         & 9                                                         & 2.7                                                       & 8                                                          & 2.4                                                       & 7                                                          & 2.1                                                        \\ \midrule
+    \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}业务单\\ 位层面\end{tabular}}} & \begin{tabular}[c]{@{}l@{}}4.零售终端与消费者近距离接触\\ 整合消费者需求\end{tabular} & 0.1         & 6                                                         & 0.6                                                       & 5                                                          & 0.5                                                        & 2                                                          & 0.2                                                        \\
+                                                                                & 7.代工厂生产，服饰质量参差                                                    & 0.2         & 10                                                        & 1.6                                                       & 9                                                          & 1.8                                                        & 10                                                         & 2                                                          \\ \midrule
+    \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}职能单\\ 位层面\end{tabular}}} & 9.产品形象好，用户满意度高                                                    & 0.3         & 9                                                         & 2.7                                                       & 9                                                          & 2.7                                                        & 7                                                          & 2.1                                                        \\ 
+                                                                                    & 11.“薄利多销”模式，销售利润率不高                                               & 0.1          &9                                                         &0.9                                                    &6                                          &0.6                    &3                      &0.3\\\bottomrule   
+    \end{tabular}
+    \end{table}
+    通过分析可以确定优衣库的优势和劣势为：
+    \begin{itemize}
+        \item 优势
+        \begin{itemize}
+            \item[S1] 公司的自主研发能力强
+            \item[S2] 近距离接触消费者，整合消费需求
+            \item[S3] 产品形象好，用户满意度高 
+        \end{itemize}
+        \item 劣势
+        \begin{itemize}
+            \item[W1] 代工厂生产，服饰质量参差不齐
+            \item[W2] “薄利多销”模式，销售利润率不高  
+        \end{itemize}
+    \end{itemize}
+\subsection{构造SWOT矩阵并进行匹配}
+\begin{table}[H]
+    \centering
+    \caption{优衣库SWOT矩阵}
+    \begin{tabular}{@{}|ll|ll|@{}}
+    \toprule
+    \multicolumn{2}{|l|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}优衣库的\\ SWOT矩阵\end{tabular}}}}                                                                                                             & \multicolumn{2}{c|}{\textbf{外部环境}}                                                                                                                                                                                                                                                                                                                   \\ \cmidrule(l){3-4} 
+    \multicolumn{2}{|l|}{}                                                                                                                                                                                            & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}O(机会)\\ O1:国家政策开放包容\\ O2:对外资企业投资建厂的支持\\ O3:物流技术信息化的发展\end{tabular}}                                                                    & \begin{tabular}[c]{@{}l@{}}T(威胁)\\ T1: 疫情对服饰零售业的冲击\\ T2: 国产快时尚品牌的崛起\end{tabular}                                                                             \\ \midrule
+    \multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}内\\ 部\\ 要\\ 素\end{tabular}}}} & \begin{tabular}[c]{@{}l@{}}S(优势)\\ S1:公司自主研发能力强\\ S2:近距离接触消费者，\\ 整合消费需求\\ S3:产品形象好，用户满\\ 意度高\end{tabular} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}SO战略：利用优势，抓住机会\\ \\ 1. 加大公司研发投入，提高\\ 公司核心竞争力（S1,O3）\\ 2. 扩大线下门店数量，迎合\\ 消费者需求（S2,O2）\\ 3. 尊重中国大陆法律法规，\\ 为消费者树立品牌形象(S3,O1)\end{tabular}} & \begin{tabular}[c]{@{}l@{}}ST战略：利用优势，化解威胁\\ \\ 1. 加大公司研发投入，促进\\ 产业化升级，打造差异化竞争\\ 优势（S1,T2）\\ 2. 线下门店做好消毒消杀，\\ 保障消费者安全，安排物流\\ 解决消费者购物难题（S2,S3,T1）\end{tabular} \\ \cmidrule(l){2-4} 
+    \multicolumn{1}{|c|}{}                                                                                & \begin{tabular}[c]{@{}l@{}}W(劣势)\\ W1:代工厂生产，服饰质\\ 量参差不齐\\ W2:"薄利多销"模式，销\\ 售利润率不高\end{tabular}             & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}WO战略：利用机会，克服弱点\\ \\ 1. 对衣服生产质量牢牢把关，\\ 对代工厂严格挑选（W1,O2）\\ 2. 扩大生产，投资建厂，利用\\ 规模经济效应提高利润（W2,O2）\end{tabular}}                              & \begin{tabular}[c]{@{}l@{}}WT战略：撤并收缩，规避风险\\ \\ 1.对代工企业优中选优，及时\\ 放弃劣质代工企业，提高产品\\ 质量（W1,T1,T2）\\ 2.提高产品技术含量，逐渐提\\ 高产品利润（W2,T2）\end{tabular}                    \\ \bottomrule
+    \end{tabular}
+    \end{table}
+\subsection{制定营销策略}
+\begin{enumerate}
+    \item 考虑企业发展战略和竞争战略，优先考虑与企业战略一致的匹配结果。\\
+    优衣库的发展战略是全球化的扩张，努力增加线下门店的数量，并且提升服饰的
+    优质度。而其竞争战略是以顾客价值为核心。显然，WT 战略不符合企业“全球
+    化扩张”、“增加门店数量”与“提升服饰质量”的发展战略，其营销策略不应该按照WT 战略思路来考
+    虑。而SO、ST、WO 战略与企业战略相一致。
+    \item 根据优衣库的核心能力，明确其应该发挥的优势
+    \begin{enumerate}
+        \item 优衣库的核心能力与竞争力并不仅仅是为消费者提供舒适合身的衣物，而在于其科技含量的提升。因此营销策略的制定一定要优先考虑与“服饰科技含量高”或者“快时尚”等优势结合，结合（S1,O3），如对HeatTech系列的大力推广。
+        \item 另外，优衣库的销售优势体现在线下门店的数量覆盖与严格的门店管理。优衣库在各大主要城市都开设有线下门店，未来优衣库可以逐步扩大线下门店数量，并且逐步向中国大陆的三四线城市下沉，抢占更多市场份额借助物流信息化技术的发展，做好仓储、物理管理。（S2,O2）
+        \item 融合“Lifewear”的理念，利用价值观营销方式树立品牌形象\\
+        优衣库lifewear的理念迎合了当下年轻一代“低碳”、“环保”的生活方式。迎合广大消费者和社会主流的生活态度，有益于优衣库在消费者心中树立品牌形象。(S3,O1)
+    \end{enumerate}
+    \item 系统分析，综合考虑，扬长避短
+    \begin{enumerate}
+        \item 明确品牌定位，打造差异化竞争\\
+        尽管优衣库现在收到业内竞争者与新进入者的威胁，但是只要制定合理的差异化营销策略，巩固市场地位与市场份额，就能积极面对市场与竞争对手的挑战。比如优衣库以休闲时尚为特征，产品多为百搭款式。所以在日常的营销活动中，企业应该时刻将品牌的内涵贯穿其中，无论是产品销售还是产品制作过程中都要牢牢抓住休闲时尚，“百搭”的关键词进行推广与销售（S3,T2）
+        \item 增加与顾客的沟通，挖掘消费需求\\
+        服装市场同质化严重，优衣库拥有的线下门店众多，能制造与消费者面对面沟通的机会也众多。应该利用优衣库的线下门店优势，增进与顾客的交流，充分挖掘消费需求。（S2,T2）
+    \end{enumerate}
+    
+\end{enumerate}
+\section{市场细分}
+目前，优衣库的目标客户定位在世界各国有购买服饰需求的男女老少，而针对各国服饰消费市场的用户特征不同，优衣库在各区域的目标用户亦有所区别。在多样化的市场中，一个公司不可能为所有的消费者提供产品或服务，公司应该根据不同的需求或者其他因素，划分不同的市场进行具体分析。对于中国大陆市场，本文将从人口细分（性别、年龄、收入），地理细分（一二三四线城市）、心理细分（生活态度）、行为细分（购买动机）四个角度阐述优衣库服饰的细分市场。
+\subsection{人口细分}
+\begin{itemize}
+    \item 根据消费者的性别可以将服装零售业分为女装、男装；女装市场一直是服装市场的大头，引领着时尚和潮流。因此众多服装企业都将大部分企业资源投入女装市场，导致了女装市场品牌众多，竞争激励，目前从国内看并没有十分突出的女装品牌。而男装市场作为服装销售的一大门类，在整个服装产业中占有重要地位。
+    \item 根据消费者的年龄，或者说收入进行细分，可以分为18-30岁，30-45岁，45-65岁，65岁以上，14岁以下的童装。优衣库的产品覆盖全年龄段。其中18-30岁的群体是服装消费最主要的群体，也是当前服装品牌最多竞争最激烈的市场。
+    
+    30-45岁消费者的经济基础雄厚，大部分消费者的消费观已经形成，其中相当部分的人已经有了自己的喜好品牌，对于新品牌的接受程度较低，购买服装的动机相比18-30岁来说更趋于理性。
+
+    45-65岁消费者事业有成，服装购买欲望一般，但是对于服装或许有一定的高阶需求（品牌或定制），该年龄段的消费者所需品牌严重缺失。
+
+    65岁以上消费者购买欲望很低，该领域的服装品牌基本为缺失。
+\end{itemize}
+\subsection{地理细分}
+\begin{enumerate}
+    \item 中国南北方差异\\
+    我国地域辽阔，南北地方气候差异明显。北方冬季的UT系列需求少，而轻羽绒，HeatTech系列需求量大。而UT系列在南方地区一年四季都可以成为畅销品牌。所以保暖系列一般以北方为主战场，而轻薄透气散热系列一般以南方为主战场。
+    \item 一二线城市与三四线城市差异\\
+    城市规模不同，地区消费者的消费能力也会不同。面对一二线消费能力强的消费者，优衣库主要销售时尚联名款，面对三四线城市消费能力弱的消费者，优衣库主要销售休闲百搭的服饰。
+\end{enumerate}
+\subsection{心理细分}
+优衣库按照不同人群的心理特点推出了不同系列的产品。为了迎合年轻人符合时尚潮流的心理特点，接连推出联名款，限定款UT系列，为了迎合实用派对于衣服保暖透气的需求推出速干，HeatTech系列。为了迎合无特殊消费需求，有选择困难的消费人群，优衣库推出百搭系列等。
+\subsection{行为细分}
+消费者购买不同服装品牌的动机不同，购买高端服饰是为了与身份地位相衬，而购买优衣库的动机则是因为优衣库低调内敛且百搭。符合消费者低调内敛的性格特点。
+\section{目标市场}
+\subsection{人口与地理细分市场}
+对于不同收入水平和不同城市的消费者细分市场。优衣库的目标市场定位非常广阔，优衣库认为全世界的每一个人都是顾客，优衣库不是日本的优衣库，不是中国大陆的优衣库，而应该是世界的优衣库，属于世界各地的每一位消费者。优衣库没有任何典型的消费群体，优衣库的目标就是把衣服卖给各式各样的人。所以优衣库的目标市场全覆盖，用自己的全线产品满足各个细分市场的顾客的需求。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figure/市场细分地理人口.png}
+    \caption{人口与地理细分市场}
+\end{figure}
+\begin{itemize}
+    \item[\textbf{低收入}] 优衣库推出百搭款，休闲款服饰，性价比高，质量好，物美价廉。
+    \item[\textbf{中收入}] 对于一二三线城市中有一定消费水平的消费者，开始追求服饰的质量，优衣库推出科技含量高的服饰如速干透气系列，轻羽绒系列与HeatTech系列服饰。
+    \item[\textbf{高收入}] 对于有较高购买力的消费者，优衣库推出联名限定款的服饰，进行饥饿营销，刺激高收入消费者进行消费。  
+\end{itemize}
+\subsection{心理与人口细分市场}
+    对于不同消费心理和不同消费行为的消费者，优衣库也做到了目标市场全覆盖的市场细分模式。不同消费心理的消费者都能购买到满意的服饰，针对不同消费者有选择地推出产品与营销方案。
+    \begin{itemize}
+        \item[\textbf{追求时尚}] 对于追求时尚的消费者。年轻一代，优衣库推出了UT系列的联名款与限定款，融合当季时尚潮流元素，牢牢把握年轻人的口味。对于中老年群体，优衣库也推出了高端夹克、西装等服饰。
+        \item[\textbf{追求质量}] 对于追求质量的消费者， 优衣库融合科技要素推出轻羽绒，速干系列产品，质量优越。
+        \item[\textbf{选择困难}] 对于选择困难型消费者，优衣库的基础款众多且都为景点百搭品种，全年龄适配。可供消费者进行挑选。 
+    \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{figure/人口心理细分市场.png}
+        \caption{人口与心理细分市场}
+    \end{figure}
+
+
+\section{市场定位}
+\subsection{产品特点}
+\begin{enumerate}
+    \item 百搭服饰\\
+    优衣库定位为“平价休闲服装”和“让全球消费者都能穿得起的优质服装”。根据其市场定位，确定了其百搭属性，可以适配任何大牌服饰进行搭配。拯救“选择困难”类消费者。
+    \item 产品质量上乘\\
+    优衣库以其高质量，高性价比受到世界范围内消费者的赞誉，与其竞争对手ZARA,H\& M相比，优衣库的服饰具有高质量的产品特点。
+\end{enumerate}
+\subsection{产品使用场合}
+\begin{enumerate}
+    \item 日常生活中的休闲服饰\\
+    优衣库定位为“平价休闲服装”，其基础款就是以百搭休闲著称。优衣库系列服饰可以完美符合消费者日常穿搭的需求。
+    \item 出席重要会议 \& 潮流穿搭\\
+优衣库除了基础款服饰，也有定位为高端的西装与夹克。除此之外，具有潮流属性的联名款与限定款成为优衣库的一大特色。
+\end{enumerate}
+\subsection{顾客利益}
+\begin{enumerate}
+    \item 门店选购，能够给顾客人性化的服务\\
+    优衣库坚持门店式选购，就是为了给顾客更加人性化的消费体验。树立品牌形象。
+    \item 完善的消费者权益保障机制，退换货制度完善\\
+    优衣库拥有合理透明的消费者权益保障机制，同时优衣库规定：商品在未经穿着、洗涤、损坏并保留吊牌和洗涤的前提下，在购买后1个月内可退换。 非顾客原因造成质量问题的商品，3个月内可无条件退换。\cite{ref13}充分保障消费者权益。
+\end{enumerate}
+% \clearpage
+\begin{thebibliography}{99}  
+\bibitem{ref1} \href{https://web.archive.org/web/20210124040046/https://www.fastretailing.com/jp/about/company/}{迅銷集團. 概况 FAST RETAILING CO., LTD.. [2018-04-26]}. 
+\bibitem{ref2}  \href{https://www.fastretailing.com/jx`p/about/links/}{リンク集 | FAST RETAILING CO., LTD.}
+\bibitem{ref3} \href{https://www.ndrc.gov.cn/xxgk/jd/jd/202210/t20221025_1339091.html?code=&state=123}{《关于以制造业为重点促进外资扩增量稳存量提质量的若干政策措施》}
+\bibitem{ref4} \href{http://www.mofcom.gov.cn/aarticle/b/g/201007/20100707044659.html}{《商务部关于促进网络购物健康发展的指导意见》}
+
+\bibitem{ref5} \href{https://www.oliverwyman.cn/content/dam/oliver-wyman/v2/publications/2020/may/thriving-in-the-new-normal_v2-cn.pdf}{新冠疫情对中国服装消费的影响 - 奥纬咨询}
+
+\bibitem{ref6} \href{https://kns.cnki.net/KCMS/detail/detail.aspx?dbname=CMFD201501&filename=1014374415.nh}{孙建国.(2014).优衣库营销策略研究(硕士学位论文,北京交通大学).}
+\bibitem{ref7} \href{http://zqb.cyol.com/html/2021-11/04/nw.D110000zgqnb_20211104_2-10.htm}{假“种草”真广告？78.2\%受访者曾被网络“种草”坑过}
+\bibitem{ref8} 优衣库事业
+\bibitem{ref9} \href{https://www.zz-news.com/com/shichangliaowang/news/itemid-1277933.html}{浅析ZARA、H\&M、GA P和UNIQLO各自的竞争优势}
+\bibitem{ref10} \href{https://zhuanlan.zhihu.com/p/70433458}{让顾客愿意一再掏钱消费，原来ZARA这样定价！}
+\bibitem{ref11} \href{https://www.fastretailing.com/tc/ir/news/pdf/fr_ir_c_n20221013_4q_summary.pdf}{迅销有限公司2022财政年度（2021年9月-2022年8月）业绩概要}
+\bibitem{ref12} \href{https://baike.baidu.com/tashuo/browse/content?id=b1fc49abf08968763a28428e}{揭秘试衣间外的优衣库：为什么说我其实是科技公司？}
+\bibitem{ref13} \href{https://www.uniqlo.com/cn/corp/returnpolicy/}{优衣库退换货政策}
+\end{thebibliography}
+\end{document}
