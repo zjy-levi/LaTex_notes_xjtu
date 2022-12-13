@@ -1,0 +1,198 @@
+\documentclass{xjtureport}
+\usepackage{color}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% \usepackage{enumerate}
+% \newCJKfontfamily\sonti{FZCuSong-B09S}[BoldFont=FZCuSong-B09S]
+% =============================================
+% Part 0 Edit the info
+% =============================================
+% \titleformat{\section}{\bfseries\sonti\sectionef}{\thesection}{1em}
+\major{大数据管理与应用}
+\name{张锦羽}
+\title{理性预期对金融市场有效性的理解与CAPM模型分析我国A股市场}
+\stuid{2204112387}
+% \college{管理学院}
+\date{\today}
+% \lab{寝室}
+\course{现代金融学}
+\instructor{李丽芳}
+% \grades{59}
+\expname{现代金融学期末大作业}% 副标题
+% \exptype{设计实验}
+% \partner{Bob}
+% \setbeamertemplate{footline}[page number]
+\setlength{\abovecaptionskip}{0.cm}
+\setCJKmainfont{simsun.ttc}[ BoldFont=simhei.ttf,ItalicFont=simkai.ttf]
+\begin{document}
+% =============================================
+% Part 1 Header
+% ============================================={不想要封面就注释掉}============
+\makecover
+% \makeheader
+\zihao{-4}
+
+% =============================================
+% Part 2 Main document
+% =============================================
+% \maketitle
+\thispagestyle{fancy}
+
+\rfoot{\thepage}
+\tableofcontents
+\clearpage
+% 同学们好，我们期末考试采取大作业的形式，分两部分：
+% 1. 500字左右谈一下你对理性预期与金融市场有效性的理解。（30分）
+% 2. 运用CAPM模型分析一下我国A股市场是否有效。（60分）
+
+% 作业没有标准答案，我更看重分析过程。可用中文或者英文答题，不允许抄袭，一旦发现期末成绩计0分。
+
+% 作业提交截止时间：12月25日晚上11点
+% \section{理性预期对有效市场的作用机制}
+\section{理性预期与金融市场有效性分析}
+\subsection{理性预期理论分析}
+理性预期理论认为，金融市场上的投资者都是完全理性的，可以最好地利用所有可以获得的信息（从概率的角度，我们一般称之为先验信息），包括股票历史信息、政府政策信息等来形成自己的投资预期。也即，理性预期理论有以下三点含义：
+\begin{enumerate}
+    \item 作出经济决策的经济主体是有理性的。
+    \item 主体在作出决策前会力图获得一切有关信息。
+    \item 在决策时不会犯系统性错误，即使犯错误，也会及时有效地调整，使得在长期而言保持正确。
+\end{enumerate}
+\par 从理性预期理论的定义我们不难看出，投资预期是一个随机变量。它可能与最优值相等，也可能与最优值之间存在较大偏差
+% \begin{itemize}
+%     \item \textbf{两者的关系：}有效市场理论和理性预期假说是现代金融学理论的最重要基石，有效市场的假说是建立在市场中投资者完全理性和信息传播速度迅速的基础上的。
+%     \item \textbf{理性预期理论分析}\\
+\subsection{有效市场理论分析}
+有效市场市场理论是理性预期理论在金融市场的一种应用。有以下三种形式：
+    \begin{enumerate}
+        \item 弱形式：即证券的现行价格仅充分反映了过去的一切公开信息（如历史数据）
+        \item 半强假设：证券的现行价格不但反映了过去的一切公开信息，还反映了现在的一切公开信息
+        \item 强假设：证券的价格不仅反映了过去、现在的一切公开信息，还充分反映了内部信息。
+    \end{enumerate}
+\par 根据以上特点我们可以得知：如果所有的信息都反映到了价格上，那么则不会存在套利的机会，任何投资者都不可能获得超过平均收益水平的额外收益，其获得的收益是对风险和机会成本的补偿。
+\subsection{理性预期对有效市场的作用机制分析}
+什么是有效的市场，根据我的理解与一些论文的分析\cite{}，合理健康的市场是无法用技术手段作预测的，收益曲线符合随机游走的规律。因为现代股票分析技术，人工智能，深度学习方法都是基于先验数据构建模型进行训练得到结果。而根据理性预期理论，这些所有的先验信息都被市场中的投资者所熟知，从而辅助投资者作出决策。说的更加生动一点，理性预期理论认为市场中的消费者，人人都是“投资高手”，能够充分利用到自己掌握的所有历史，现在和内部的信息辅助进行投资决策。
+\par 首先市场中的投资者基于先验的信息和能够收集到的所有信息，进行投资决策，目的是为了使得消费者的期望效用得到最大（基于消费者理性人的假设）。结合消费者自身对风险的偏好，消费者群体作出决策。最终群体决策的结果反映到证券市场的价格上，价格反映了消费者当前能够掌握的所有信息。
+\par 证券的价格应该准确地反映收集到的所有关于未来定价的新资料和信息，这是基于证券市场的强有效性假设和投资者全部理性预期所形成的市场机制所作出的论断。因为一旦证券价格没有很迅速的变化到反映所有已知信息的水平，就存在掌握较多信息的人利用时间与信息差进行套利，使得证券价格很快维持到市场预期水准。但在理性预期和强有效性假设的前提下，市场上是不可能存在连续套利机会的。
+\par 此外，我认为在理性预期假设和强有效性市场假设的前提下，“掌握较多信息的人”是一种伪命题。由理性预期理论可知，他们只是通过消除未被利用到的盈利机会而使得市场更具有效率的人。在理性预期假设中，信息的获取是无成本的，投资者也都是智力水平类似，分析能力类似的一大类群体，可以认为市场上投资者们的信息是共享的。因此“掌握较多信息的人”即使真的存在，也会因为市场上信息流动的迅速，最终迅速反映在证券价格中，不会存在持续性套利的空间。
+\par 在理性预期均衡下，交易者没有重新订约的意愿，均衡处于稳定状态。它表示市场结清的均衡价格已不能为交易者提供新的可以利用的私人信息，也表示交易者已从均衡价格中窥探到其他交易者的所有私人信息，在这两种意义上理性预期均衡完全揭示私人信息，市场没有用新信息获取赢利的可能。
+\par 总结，我认为理性预期假设对市场有效性的机制如下：
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{figure/期望与市场有效性.png}
+    \end{center}
+    \caption{理性预期理论对市场有效性的作用机制概念图}
+\end{figure}
+\clearpage
+\section{运用CAPM模型对我国A股市场有效性的分析}
+\subsection{引言}
+本文通过使用CAPM模型对上证A股的实证
+\subsection{CAPM模型的综述}
+CAPM（英语：Capital Asset Pricing Model，缩写：CAPM）又称资本资产价格决定模型，为现代金融市场价格理论的支柱，广泛应用于投资决策和公司理财领域。
+\par 对于一个给定的资产$i$，其期望回报率和市场投资组合的期望回报率之间的关系可以表示为：
+\begin{equation*}
+    E(r_{i})=r_{f}+\beta _{{im}}[E(r_{m})-r_{f}]
+\end{equation*}
+其中：
+\begin{itemize}
+    \item $E(r_{i})$是资产$i$的期望回报率（或普通股的资本成本率）
+    \item $r_{f}$是无风险回报率，通常以短期国债的利率来近似替代
+    \item $\beta _{{im}}$（Beta）是资产i的系统性风险系数，$\beta_{im} = \frac {Cov(r_i,r_m)}{Var(r_m)}$
+    \item $E(r_{m})$是市场投资组合$m$的期望回报率，通常用股票价格指数回报率的平均值或所有股票的平均回报率来代替。
+    \item $E(r_{m})-r_{f}$是市场风险溢价，即市场投资组合的期望回报率与无风险回报率之差。
+\end{itemize}
+\subsection{数据与方法}
+\subsubsection{数据}
+本报告所用主要数据来源于iFind数据库、英伟财经网的开源数据集以及python开源量化交易社区Tushare的开源数据接口调用。以及使用python调用tusharepro\cite{ref4}数据接口获得日交易数据；2022中国三年期国债年化收益率\cite{ref5}等。
+\par 主要数据包括，iFind数据库中2160支上证A股股票列表、\href{https://cn.investing.com/}{英为财经：cn.investing.com}中2022-1-4~~2022-12-13时间内的中国上证A股指数，以及通过tushare接口调用所获取的2022-1-4~~2022-12-13时间内的中国上证A股的日交易数据。对于数据中的遗失数据（missing value）采取下列方法进行处理：连续遗失数据超过3个，我们认为该股票在一段时间内关闭交易短暂退出市场，因此该股票被剔除；对于可容忍的遗失数据用比例插值法补充。
+\par 无风险收益率$R_f$选取的是2022中国三年期国债年化收益率\cite{ref5}转换为日收益率。一般来说国债风险较低，可以近似视为无风险资产。
+\begin{itemize}
+    \item 上证A股指数
+\end{itemize}
+\par 上证A股指数是由上海证券交易所编制，其样本股是全部上市A股，以1990年12月19日为基日，以该日所有A股的市价总值为基期，基期指数定为100点，反映了A股的股价整体变动状况，可以用作近似估计市场平均收益率的指标。由于上海特殊的地理地位，与上交所的金融虹吸性，使得上证A股指数具有优秀的灵敏度与嗅觉，被量化交易从业者们称为“股市晴雨表”\cite{ref6}
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{figure/上证A股指数.png}
+    \end{center}
+    \caption{上证A股指数}
+\end{figure}
+\subsubsection{方法}
+本报告中主要是通过实证研究的方法，通过对资产风险溢价与市场风险溢价进行线性回归。使用OLS估计线性回归的参数来估计$\beta$与$\alpha$的值。在CAPM模型中，首先假设$R_i$服从正态分布，并且所有资产的$\alpha$都应该是 0 或接近于 0，如果和 0 有显著差异，说明个股有异常收益，代表收益率胜过大盘。同时检验$\beta$的显著性与正负性，如果$\beta$显著，则说明资产投资组合净值的波动显著强于全体市场的波动幅度，不符合有效市场的假定；反之$\beta$值统计上不显著，则证明了有效市场的假设条件，同理如果$\beta <0$则说明有负的风险溢价，说明CAPM模型无效，违反了有效市场假定。
+\par 于是确定我们的实证研究模型：
+\begin{equation}
+    R_{i,t}-R_{f,t} = \alpha_i + \beta_i(R_{m,t} - R_{f,t}) + \varepsilon_{it}, \forall t=1, \ldots ,229
+\end{equation}
+令$R_{i,t}-R_{f,t}=Z_{i,t}$为资产风险溢价，$R_{m,t}-R_{f,t} = Z_{m,t}$为市场风险溢价。则我们的模型可以简化为面板数据上时间维度的简单线性回归：
+\begin{equation}
+    Z_{i,t} = \alpha_i + \beta_i Z_{m,t} + \varepsilon_{it}, \forall t=1, \ldots ,229
+\end{equation}
+本文通过借鉴\cite{ref2}的研究思路，首先利用tushare数据接口获取2160支上证A股的2022年至今收益率数据。并利用2022年中国三年期国债视为无风险资产，设国债收益率为$Rf_{year}$，则转换为对应日收益率为：$R_f=(1+Rf_{year})^{1/365}-1$。
+\par 由于上证A股数量过多，本份报告仅用于检验CAPM模型对于中国A股市场的有效性。于是在2160支A股一年度的日交易数据中，采取随机无放回抽样的方法获得20支股票的数据集进行检验模型。
+作出上证指数与长龄液压（605389.SH）的相较于无风险资产（三年期国债）的收益率变化曲线如图\ref{收益图}所示。
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{figure/output.png}
+    \end{center}
+    \caption{收益率曲线}
+    \label{收益图}
+\end{figure}
+\section{模型结果}
+通过python代码求解可得，20组线性回归的系数与截距，与计算的t统计量如\ref{表}所示：
+% Please add the following required packages to your document preamble:
+\begin{table}[H]
+    \centering
+    \caption{系数与截距结果}
+    \label{表}
+    \begin{tabular}{@{}llll@{}}
+    \toprule
+    \textbf{$\beta$} & \textbf{$\alpha$} & \textbf{t\_beta} & \textbf{t\_alpha} \\ \midrule
+    1.32                          & 0.12                           & 0.49             & 0.82              \\
+    0.75                          & -0.04                          & 0.49             & 0.59              \\
+    1.44                          & -0.12                          & 0.49             & 0.44              \\
+    1.23                          & 0.07                           & 0.49             & 0.96              \\
+    1.19                          & -0.12                          & 0.49             & 0.32              \\
+    1.12                          & 0.06                           & 0.59             & 0.97              \\
+    1.09                          & -0.06                          & 0.49             & 0.44              \\
+    \vdots                              &\vdots                                & \vdots                 &  \vdots                 \\
+    1.01                          & 0.08                           & 0.49             & 0.88              \\ \bottomrule
+    \end{tabular}
+    \end{table}
+随机抽样的结果中，20支A股股票的$\beta$值平均为1.0014805721467592，与1十分接近，然而t统计量均未显著，说明无法拒绝H0：$\beta=1$的原假设。在CAPM假设中全体市场本身的$\beta$系数为1，若资产投资组合净值的波动大于全体市场的波动幅度，则$\beta$系数大于1。反之，若资产投资组合净值的波动小于全体市场的波动幅度，则$\beta$系数就小于1投资市场中的资产风险。由结果可以看出，溢价与市场风险溢价接近1：1的比例，符合有效市场的情况。
+\par 20支A股股票的$\alpha$值平均为0.031600981277922754，与0非常接近，然而也均未通过t检验。说明无法拒绝H0：$\alpha=0$的原假设。说明此时市场上几乎没有高于理论预期收益率的投资产品。符合有效市场的假设。
+\subsection{模型结果检验}
+为了检验模型结果可靠性，本报告采用重复实验的操作进行验证。采用Bootstrap方法从2160支A股数据中进行采样，取50支作为测试数据，使用CAPM模型进行线性拟合并检验，检验$\beta$值，$\alpha$值的可靠性。重复实验进行五次。可以得出如表\ref{重复实验}的结果：
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[H]
+    \centering
+    \caption{重复实验}
+    \begin{tabular}{@{}ccccc@{}}
+    \toprule
+    \textbf{实验次数} & \textbf{beta}      & \textbf{alpha}      & \textbf{显著的beta个数} & \textbf{显著的alpha个数} \\ \midrule
+    1             & 1.0172283174092454 & 0.063554865568411   & 0                  & 0                   \\
+    2             & 1.0414587522697818 & 0.07285416293400034 & 0                  & 0                   \\
+    3             & 1.0244219979090043 & 0.07662818360784898 & 0                  & 0                   \\
+    4             & 1.0213777619259508 & 0.07881462373277887 & 0                  & 0                   \\
+    5             & 1.037181773886069  & 0.06866057540732122 & 0                  & 0                   \\ \bottomrule
+    \end{tabular}
+    \end{table}
+可以看出，模型的结果具有较强的鲁棒性。五次实验的$\beta$均未出现显著，且均略高于1，同理$\alpha$也未出现显著的情况，实验结果均于0相近。
+\subsection{不足}
+该研究方法忽略了市场外部复杂的变化情况，未能全面考虑模型的内生性问题。同时采用随机抽样的方法进行研究，具有一定的偶然性，虽然最后使用随机放回抽样进行实验检验，但实验结果的可靠性有待进一步提升。可以采用全部数据进行训练模型，能得到最有说服力的结果，由于tushare库的调用权限和并发访问量的上限，本文中未能完成此工作。
+\par 此外仅通过上证A股指数进行市场内A股股市的平均收益，可能存在系统性偏差，可以考虑纳入沪深300，深证等其他指数进行加权平均得到市场的平均收益结果进行研究，作者囿于时间原因未能有精力完成。
+\par 最后，本文仅仅选用了2022年初至2022年12月13日的A股股市和A股指数数据。考虑到近期政策变化的频繁性与异动，也有可能是导致本实验验证结果出现偏差的原因之一，可以通过延长采样时间段的方式缓解这一因素带来的系统性内生偏误。
+\begin{thebibliography}{99}  
+    \bibitem{ref2} 陈小悦,孙爱军.CAPM在中国股市的有效性检验[J].北京大学学报(哲学社会科学版),2000(04):28-37.
+    \bibitem{ref3} \href{https://cn.investing.com/indices/shanghai-composite-historical-data}{英为财经--上证指数历史数据}
+    \bibitem{ref4} \href{https://tushare.pro/}{Tushare大数据开放社区
+    :免费提供各类数据 , 助力行业和量化研究。}
+    \bibitem{ref5} \href{https://cn.investing.com/rates-bonds/china-government-bonds}{政府债券- 中国国债收益率一览 - 英为财情}
+    \bibitem{ref6} \href{https://wiki.mbalib.com/wiki/%E4%B8%8A%E8%AF%81%E6%8C%87%E6%95%B0}{MBA智库百科--上证指数}
+\end{thebibliography}
+\section*{代码}
+\subsection*{货币金融学大作业}
+
+\lstinputlisting[language=Python]{capm_model.py}
+
+\end{document}
